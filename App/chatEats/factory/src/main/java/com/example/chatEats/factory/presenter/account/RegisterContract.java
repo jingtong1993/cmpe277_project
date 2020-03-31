@@ -6,6 +6,7 @@ public interface RegisterContract {
     interface View extends BaseContract.View<Presenter> {
         // 注册成功
         void registerSuccess();
+
     }
 
     interface Presenter extends BaseContract.Presenter {
@@ -14,6 +15,7 @@ public interface RegisterContract {
 
         // 检查手机号是否正确
         boolean checkMobile(String phone);
+
     }
 
 }
