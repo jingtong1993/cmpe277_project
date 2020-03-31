@@ -10,5 +10,8 @@ import com.example.chatEats.common.app.Application;
 
 // test test
 
+    
+
+
 public class App extends Application {
 }
