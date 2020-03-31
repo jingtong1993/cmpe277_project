@@ -11,6 +11,7 @@ import com.example.chatEats.factory.presenter.account.RegisterPresenter;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.activities.MainActivity;
 
+import net.qiujuer.genius.ui.widget.Button;
 import net.qiujuer.genius.ui.widget.Loading;
 
 import butterknife.BindView;
@@ -34,7 +35,7 @@ public class RegisterFragment extends PresenterFragment<RegisterContract.Present
     Loading mLoading;
 
     @BindView(R.id.btn_submit)
-    Loading mSubmit;
+    Button mSubmit;
 
     public RegisterFragment() {
         // Required empty public constructor
