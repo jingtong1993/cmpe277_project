@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chatEats.push.activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarWithStatusBarSize"
+        android:elevation="@dimen/len_2"
+        android:outlineProvider="bounds"
+        tools:targetApi="lollipop">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/statusBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/len_4"
+            android:paddingRight="@dimen/len_4">
+
+            <com.example.chatEats.common.widget.PortraitView
+                android:id="@+id/image_portrait"
+                android:padding="@dimen/len_4"
+                android:layout_margin="@dimen/len_4"
+                android:layout_width="@dimen/len_40"
+                android:layout_height="@dimen/len_40"
+                android:foreground="@drawable/ic_touch_menu"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_portrait"/>
+
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.Title"
+                android:text="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:tint="?attr/toolbarMenuIconColor"
+                android:padding="@dimen/len_10"
+                android:layout_width="@dimen/len_40"
+                android:layout_height="@dimen/len_40"
+                android:src="@drawable/ic_search"
+                android:layout_margin="@dimen/len_4"
+                android:scaleType="centerInside"
+                android:foreground="@drawable/ic_touch_menu"
+                android:layout_gravity="end|center_vertical"/>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/lay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/len_52"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    <net.qiujuer.genius.ui.widget.FloatActionButton
+        android:id="@+id/button_action"
+        android:tint="@color/white"
+        android:padding="@dimen/len_20"
+        android:src="@drawable/ic_group_add"
+        android:layout_width="@dimen/len_52"
+        android:layout_height="@dimen/len_52"
+        app:gBackgroundColor="@color/colorAccent"
+        android:layout_marginBottom="@dimen/len_68"
+        android:layout_marginEnd="@dimen/len_16"
+        android:translationY="@dimen/len_76"
+        app:layout_anchor="@id/lay_container"
+        app:layout_anchorGravity="bottom|end"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_52"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation_items"
+        app:itemIconTint="@color/text_nav"
+        app:itemTextColor="@color/text_nav"
+        android:elevation="@dimen/len_4"
+        android:translationZ="@dimen/len_8"
+        android:outlineProvider="bounds"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

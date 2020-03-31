@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_gallery_select_max_size">Choose At Most%dPhotos</string>
+
+
+    <string name="label_permission_network">Network Authorize</string>
+    <string name="label_permission_network_desc">For Instant Message Use</string>
+    <string name="label_permission_read">Read File</string>
+    <string name="label_permission_read_desc">For Setting Portrait And Sending Images</string>
+    <string name="label_permission_write">Write File</string>
+    <string name="label_permission_write_desc">For OSS Log Saving</string>
+    <string name="label_permission_record_audio">Microphone</string>
+    <string name="label_permission_record_audio_desc">For Voice Message</string>
+    <string name="label_permission_submit">Authorize</string>
+    <string name="label_permission_ok">Authorize Success!</string>
+
+
+    <string name="label_update_info_tips">Only One Step Left</string>
+    <string name="label_login_welcome">Login</string>
+    <string name="label_submit">Submit</string>
+    <string name="label_login">Login</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_register_welcome">Welcome!</string>
+    <string name="label_register">Register</string>
+    <string name="label_password">Password</string>
+    <string name="label_portrait_tips">Choose Your Portrait</string>
+    <string name="label_name">Name</string>
+    <string name="label_desc_tips">Describe Yourself</string>
+    <string name="label_sex_man">Male</string>
+    <string name="label_sex_woman">Female</string>
+    <string name="label_go_register">No Account? Register</string>
+    <string name="label_go_login">Already Have Account? Login</string>
+</resources>
