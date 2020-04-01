@@ -4,7 +4,6 @@ package com.example.chatEats.push.frags.account;
 import android.content.Context;
 import android.widget.EditText;
 
-import com.example.chatEats.common.app.Fragment;
 import com.example.chatEats.common.app.PresenterFragment;
 import com.example.chatEats.factory.presenter.account.RegisterContract;
 import com.example.chatEats.factory.presenter.account.RegisterPresenter;
@@ -17,9 +16,7 @@ import net.qiujuer.genius.ui.widget.Loading;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class RegisterFragment extends PresenterFragment<RegisterContract.Presenter> implements RegisterContract.View {
 
     private AccountTrigger mAccountTrigger;

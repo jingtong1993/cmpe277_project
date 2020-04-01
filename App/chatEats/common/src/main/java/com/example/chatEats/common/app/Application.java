@@ -13,6 +13,8 @@ import java.io.File;
 public class Application extends android.app.Application {
     private static Application instance;
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();

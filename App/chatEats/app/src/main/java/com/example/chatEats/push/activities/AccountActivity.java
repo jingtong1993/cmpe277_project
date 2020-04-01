@@ -73,10 +73,10 @@ public class AccountActivity extends Activity implements AccountTrigger {
     }
 
     // Activity中收到剪切图片成功的回调
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        mCurFragment.onActivityResult(requestCode, resultCode, data);
-    }
+//    @Override
+//    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        mCurFragment.onActivityResult(requestCode, resultCode, data);
+//    }
 
     @Override
     public void triggerView() {

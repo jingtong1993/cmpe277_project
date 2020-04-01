@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data_account_login_invalid_parameter">Username and password cannot be empty</string>
+    <string name="data_account_login_error_validate">Username or password is wrong</string>
+    <string name="data_account_register_invalid_parameter_mobile">Please enter correct phone number!</string>
+    <string name="data_account_register_invalid_parameter_password">Password cannot be less than 6 charactors</string>
+    <string name="data_account_register_invalid_parameter_name">Name cannot be less than 2 charactors</string>
+    <string name="data_account_update_invalid_parameter">Portrait and description cannot be empty</string>
+    <string name="data_network_error">Network error</string>
+    <string name="data_upload_error">Upload error</string>
+
+
+    <string name="data_rsp_error_unknown">Unknown error</string>
+    <string name="data_rsp_error_service">Service error</string>
+    <string name="data_rsp_error_not_found_user">User not found</string>
+    <string name="data_rsp_error_not_found_group">Group not found</string>
+    <string name="data_rsp_error_not_found_group_member">Group member not found</string>
+    <string name="data_rsp_error_create_user">Create user error</string>
+    <string name="data_rsp_error_create_group">Create group error</string>
+    <string name="data_rsp_error_create_message">Create message error</string>
+    <string name="data_rsp_error_parameters">Parameter error</string>
+    <string name="data_rsp_error_parameters_exist_account">Account already exists</string>
+    <string name="data_rsp_error_parameters_exist_name">Username already exists</string>
+    <string name="data_rsp_error_account_token">Please login again</string>
+    <string name="data_rsp_error_account_login">Login failed</string>
+    <string name="data_rsp_error_account_register">Register failed</string>
+    <string name="data_rsp_error_account_no_permission">No permission!</string>
+
+</resources>

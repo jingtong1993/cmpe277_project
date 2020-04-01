@@ -1,4 +1,4 @@
-package com.example.chatEats.factory.model.api;
+package com.example.chatEats.factory.model.api.account;
 
 public class RegisterModel {
     private String account;
