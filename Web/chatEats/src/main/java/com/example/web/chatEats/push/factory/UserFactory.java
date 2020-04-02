@@ -110,8 +110,11 @@ public class UserFactory {
         user.setName(name);
         user.setPassword(password);
         user.setPhone(account);
+        return Hib.query(session -> {
+            session.save(user);
+            return user;
+        });
 
-        return Hib.query(session -> (User) session.save(user));
     }
 
     private static User login(User user) {

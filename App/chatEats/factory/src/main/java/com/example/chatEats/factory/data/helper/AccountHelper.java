@@ -9,6 +9,8 @@ import com.example.chatEats.factory.model.db.User;
 import com.example.chatEats.factory.net.Network;
 import com.example.chatEats.factory.net.RemoteService;
 
+import java.io.IOException;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -33,7 +35,8 @@ public class AccountHelper {
                         callback.onDataLoaded(user);
                     }
                     else {
-                        bindPush(callback);
+                        callback.onDataLoaded(accountRspModel.getUser());
+                        //bindPush(callback);
                     }
 
                 }
@@ -44,7 +47,13 @@ public class AccountHelper {
 
             @Override
             public void onFailure(Call<RspModel<AccountRspModel>> call, Throwable t) {
-                callback.onDataNotAvailable(R.string.data_network_error);
+                if (t instanceof IOException) {
+                    t.printStackTrace();
+                    callback.onDataNotAvailable(R.string.data_network_error);
+                }
+                else {
+                    callback.onDataNotAvailable(R.string.data_rsp_error_unknown);
+                }
 
             }
         });

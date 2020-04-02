@@ -1,5 +1,6 @@
 package com.example.chatEats.common.app;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -55,6 +56,7 @@ public abstract class Activity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
+        @SuppressLint("RestrictedApi")
         List<Fragment> fragments = getSupportFragmentManager().getFragments();
         if(fragments != null && fragments.size() > 0) {
             for (Fragment fragment : fragments) {
