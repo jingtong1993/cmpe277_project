@@ -4,7 +4,6 @@ import com.example.web.chatEats.push.bean.db.User;
 import com.example.web.chatEats.push.utils.Hib;
 import com.example.web.chatEats.push.utils.TextUtil;
 import com.google.common.base.Strings;
-import org.hibernate.Session;
 
 import java.util.List;
 import java.util.UUID;
@@ -105,6 +104,9 @@ public class UserFactory {
 
     }
 
+
+
+
     private static User createUser(String account, String password, String name) {
         User user = new User();
         user.setName(name);
@@ -114,7 +116,6 @@ public class UserFactory {
             session.save(user);
             return user;
         });
-
     }
 
     private static User login(User user) {

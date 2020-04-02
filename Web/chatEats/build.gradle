@@ -32,6 +32,16 @@ dependencies {
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0
     compile 'org.hibernate:hibernate-c3p0:5.2.9.Final'
 
+    // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+    // compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+//    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.9.Final'
+//    // https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0
+//    compile group: 'org.hibernate', name: 'hibernate-c3p0', version: '5.2.9.Final'
+//    // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+//    compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.2.9.Final'
+
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.11'
     // test
