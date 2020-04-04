@@ -111,7 +111,9 @@ public class UserFactory {
         user.setPassword(password);
         user.setPhone(account);
 
-        return Hib.query(session -> (User) session.save(user));
+        return Hib.query(session -> {session.save(user);
+        return user;
+        });
     }
 
     private static User login(User user) {

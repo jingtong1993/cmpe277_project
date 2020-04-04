@@ -1,5 +1,6 @@
 package com.example.chatEats.factory.data.helper;
 
+import com.example.chatEats.factory.Factory;
 import com.example.chatEats.factory.R;
 import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
@@ -24,27 +25,39 @@ public class AccountHelper {
         call.enqueue(new Callback<RspModel<AccountRspModel>>() {
             @Override
             public void onResponse(Call<RspModel<AccountRspModel>> call, Response<RspModel<AccountRspModel>> response) {
+
+                //请求成功返回
+                //返回中得到全局model得到全局model,内部是使用的Gson进行解析
                 RspModel<AccountRspModel> rspModel = response.body();
+                //
                 if (rspModel.success()) {
+                    //拿到实体
                     AccountRspModel accountRspModel = rspModel.getResult();
 
                     if (accountRspModel.isBind()) {
+                        // 数据库写入？
                         User user = accountRspModel.getUser();
                         callback.onDataLoaded(user);
                     }
                     else {
+
                         bindPush(callback);
                     }
 
                 }
                 else {
                     //callback.onDataNotAvailable();
+                    //错误解析 格式化
+                    Factory.decodeRspCode(rspModel, callback);
                 }
             }
 
             @Override
             public void onFailure(Call<RspModel<AccountRspModel>> call, Throwable t) {
-                callback.onDataNotAvailable(R.string.data_network_error);
+
+                //网络请求失败
+                callback.onDataNotAvailable(R.string.app_name);
+
 
             }
         });
