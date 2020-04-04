@@ -26,9 +26,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
-
-        <activity android:name=".activities.UserActivity"></activity>
+        <user-permission android:name = "android.permission.RECORD_AUDIO"/>
 
         <activity
             android:name=".LaunchActivity"
@@ -40,10 +38,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".activities.UserActivity"
+            android:label="UserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+
+
         <activity
             android:name=".activities.AccountActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Account" />
+
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
