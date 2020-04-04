@@ -79,24 +79,12 @@ public class LaunchActivity extends Activity {
      *
      */
     private void waitPushReceiverId() {
-
-        if (!TextUtils.isEmpty(Account.getPushId())) {
-            // 跳转
-            skip();
-            return;
-        }
-
-        // 循环等待
-        // 循环等待
-        getWindow().getDecorView()
-                .postDelayed(this::waitPushReceiverId, 500);
-    }
-
-        /*if (Account.isLogin()) {
+        if (Account.isLogin()) {
             // 已经登录情况下，判断是否绑定
             // 如果没有绑定则等待广播接收器进行绑定
             if (Account.isBind()) {
-                waitPushReceiverIdDone();
+                //waitPushReceiverIdDone();
+                skip();
                 return;
             }
         } else {
@@ -104,15 +92,17 @@ public class LaunchActivity extends Activity {
             // 如果拿到了PushId, 没有登录是不能绑定PushId的
             if (!TextUtils.isEmpty(Account.getPushId())) {
                 // 跳转
-                waitPushReceiverIdDone();
+                //waitPushReceiverIdDone();
+                skip();
                 return;
             }
         }
 
+
         // 循环等待
         getWindow().getDecorView()
                 .postDelayed(this::waitPushReceiverId, 500);
-    }*/
+    }
 
 
 
@@ -143,10 +133,11 @@ public class LaunchActivity extends Activity {
         // 权限检测，跳转
         if (PermissionsFragment.haveAll(this, getSupportFragmentManager())) {
             // 检查跳转到主页还是登录
-            //if (Account.isLogin()) {
-                //MainActivity.show(this);
-            //} else {
-            MainActivity.show(this);
+            if (Account.isLogin()) {
+                MainActivity.show(this);
+            } else {
+                MainActivity.show(this);
+            }
             finish();
         }
     }

@@ -4,6 +4,7 @@ package com.example.chatEats.factory;
 import com.example.chatEats.common.app.Application;
 import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
+import com.example.chatEats.factory.persistence.Account;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -30,6 +31,13 @@ public class Factory {
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
                 //.setExclusionStrategies()
                 .create();
+    }
+
+    //factory里面的初始化
+    public static void setup(){
+        //持久化数据 初始化
+        Account.load(app());
+
     }
 
     /**
@@ -134,13 +142,17 @@ public class Factory {
 
     }
 
+
     /**
      * 处理推送来的消息
-     *
+     * 视频里面讲的的是message
      * @param str 消息
+     */
 
     public static void dispatchPush(String str) {
-        // 首先检查登录状态
+
+    }
+        /* 首先检查登录状态
         if (!Account.isLogin())
             return;
 
@@ -226,5 +238,6 @@ public class Factory {
         return GroupDispatcher.instance();
     }
     */
+
 
 }

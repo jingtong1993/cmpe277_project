@@ -9,6 +9,7 @@ import com.example.chatEats.factory.model.api.account.RegisterModel;
 import com.example.chatEats.factory.model.db.User;
 import com.example.chatEats.factory.net.Network;
 import com.example.chatEats.factory.net.RemoteService;
+import com.example.chatEats.factory.persistence.Account;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -65,6 +66,8 @@ public class AccountHelper {
 
 
     public static void bindPush(final DataSource.Callback<User> callback) {
+
+        Account.setBind(true);
         // 检查是否为空
 //        String pushId = Account.getPushId();
 //        if (TextUtils.isEmpty(pushId))
