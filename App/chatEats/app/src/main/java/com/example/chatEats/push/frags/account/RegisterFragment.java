@@ -5,8 +5,8 @@ import android.content.Context;
 import android.widget.EditText;
 
 import com.example.chatEats.common.app.PresenterFragment;
-import com.example.chatEats.factory.presenter.account.RegisterContract;
-import com.example.chatEats.factory.presenter.account.RegisterPresenter;
+import com.example.chatEats.factory.presenter.persenter.RegisterContract;
+import com.example.chatEats.factory.presenter.persenter.RegisterPresenter;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.activities.MainActivity;
 
