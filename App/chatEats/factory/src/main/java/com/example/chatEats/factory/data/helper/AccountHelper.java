@@ -6,10 +6,15 @@ import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
 import com.example.chatEats.factory.model.api.account.AccountRspModel;
 import com.example.chatEats.factory.model.api.account.RegisterModel;
+import com.example.chatEats.factory.model.db.AppDatabase;
 import com.example.chatEats.factory.model.db.User;
 import com.example.chatEats.factory.net.Network;
 import com.example.chatEats.factory.net.RemoteService;
 import com.example.chatEats.factory.persistence.Account;
+import com.raizlabs.android.dbflow.config.DatabaseDefinition;
+import com.raizlabs.android.dbflow.config.FlowManager;
+import com.raizlabs.android.dbflow.structure.database.DatabaseWrapper;
+import com.raizlabs.android.dbflow.structure.database.transaction.ITransaction;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -34,14 +39,28 @@ public class AccountHelper {
                 if (rspModel.success()) {
                     //拿到实体
                     AccountRspModel accountRspModel = rspModel.getResult();
+                    //获取我的信息
+                    User user = accountRspModel.getUser();
+                    //第一种
+                    user.save();
+                        /* 第二种通过ModelAdapter
+                        FlowManager.getModelAdapter(User.class).save(user);
+                        //3
+                        DatabaseDefinition definition = FlowManager.getDatabase(AppDatabase.class);
+                        definition.beginTransactionAsync(new ITransaction() {
+                            @Override
+                            public void execute(DatabaseWrapper databaseWrapper) {
+                                FlowManager.getModelAdapter(User.class).save(user);
+                            }
+                        }).build().execute();*/
+
+                    Account.login(accountRspModel);
+
 
                     if (accountRspModel.isBind()) {
-                        // 数据库写入？
-                        User user = accountRspModel.getUser();
                         callback.onDataLoaded(user);
                     }
                     else {
-
                         bindPush(callback);
                     }
 

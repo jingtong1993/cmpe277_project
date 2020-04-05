@@ -5,8 +5,11 @@ import com.example.chatEats.common.app.Application;
 import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
 import com.example.chatEats.factory.persistence.Account;
+import com.example.chatEats.factory.utils.DBFlowExclusionStrategy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.raizlabs.android.dbflow.config.FlowConfig;
+import com.raizlabs.android.dbflow.config.FlowManager;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -29,12 +32,15 @@ public class Factory {
         executor = Executors.newFixedThreadPool(4);
         gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
-                //.setExclusionStrategies()
+                .setExclusionStrategies(new DBFlowExclusionStrategy())
                 .create();
     }
 
     //factory里面的初始化
     public static void setup(){
+        //init db
+        FlowManager.init(new FlowConfig.Builder(app()).openDatabasesOnInit(true).build());
+
         //持久化数据 初始化
         Account.load(app());
 
