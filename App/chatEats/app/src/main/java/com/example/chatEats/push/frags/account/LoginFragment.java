@@ -6,8 +6,10 @@ import android.widget.EditText;
 
 import com.example.chatEats.common.app.Fragment;
 import com.example.chatEats.common.app.PresenterFragment;
-import com.example.chatEats.factory.presenter.persenter.LoginContract;
-import com.example.chatEats.factory.presenter.persenter.LoginPresenter;
+import com.example.chatEats.factory.presenter.account.LoginContract;
+import com.example.chatEats.factory.presenter.account.LoginPresenter;
+import com.example.chatEats.factory.presenter.account.LoginContract;
+import com.example.chatEats.factory.presenter.account.LoginPresenter;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.activities.MainActivity;
 
@@ -20,13 +22,12 @@ import butterknife.OnClick;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LoginFragment extends PresenterFragment<LoginContract.Presenter>implements LoginContract.View {
+public class LoginFragment extends PresenterFragment<LoginContract.Presenter>
+        implements LoginContract.View {
     private AccountTrigger mAccountTrigger;
 
     @BindView(R.id.edit_phone)
     EditText mPhone;
-    @BindView(R.id.edit_name)
-    EditText mName;
     @BindView(R.id.edit_password)
     EditText mPassword;
 
@@ -41,11 +42,10 @@ public class LoginFragment extends PresenterFragment<LoginContract.Presenter>imp
         // Required empty public constructor
     }
 
-
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+        // 拿到我们的Activity的引用
         mAccountTrigger = (AccountTrigger) context;
     }
 
@@ -65,7 +65,7 @@ public class LoginFragment extends PresenterFragment<LoginContract.Presenter>imp
         String phone = mPhone.getText().toString();
         String password = mPassword.getText().toString();
         // 调用P层进行注册
-        mPresenter.login(phone,password);
+        mPresenter.login(phone, password);
     }
 
     @OnClick(R.id.txt_go_register)
@@ -73,7 +73,6 @@ public class LoginFragment extends PresenterFragment<LoginContract.Presenter>imp
         // 让AccountActivity进行界面切换
         mAccountTrigger.triggerView();
     }
-
 
     @Override
     public void showError(int str) {
@@ -101,14 +100,11 @@ public class LoginFragment extends PresenterFragment<LoginContract.Presenter>imp
         mPassword.setEnabled(false);
         // 提交按钮不可以继续点击
         mSubmit.setEnabled(false);
-
     }
-
 
     @Override
     public void loginSuccess() {
         MainActivity.show(getContext());
         getActivity().finish();
-
     }
 }

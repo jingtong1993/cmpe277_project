@@ -20,4 +20,8 @@ public class Network {
 
         return retrofit;
     }
+
+    public static RemoteService remote(){
+        return Network.getRetrofit().create(RemoteService.class);
+    }
 }
