@@ -31,8 +31,8 @@ public class LoginPresenter extends BasePresenter<LoginContract.View>
             view.showError(R.string.data_account_login_invalid_parameter);
         } else {
             // 尝试传递PushId
-            //Account.getPushId()
-            LoginModel model = new LoginModel(phone, password);
+
+            LoginModel model = new LoginModel(phone, password,Account.getPushId());
             AccountHelper.login(model, this);
         }
     }
