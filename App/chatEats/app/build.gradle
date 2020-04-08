@@ -10,6 +10,13 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "8JpFbYKRIO6MqnwufoYAd1",
+                GETUI_APP_KEY   : "p9fRTAe3nTAjcyUBXNbRl",
+                GETUI_APP_SECRET: "qIznyvUEtt80gCPXnhnf79",
+                PACKAGE_NAME    : applicationId
+        ]
     }
     buildTypes {
         release {
@@ -44,6 +51,8 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
     implementation "com.github.yalantis:ucrop:$ucropVersion"
     implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation "com.getui:sdk:$rootProject.ext.getuiVersion"
 
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

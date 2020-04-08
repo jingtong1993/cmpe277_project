@@ -6,6 +6,7 @@ import androidx.annotation.StringRes;
 import com.example.chatEats.common.app.Application;
 import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
+import com.example.chatEats.factory.persistence.Account;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -30,6 +31,16 @@ public class Factory {
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
                 //.setExclusionStrategies()
                 .create();
+    }
+
+    public static void setup() {
+        // 初始化数据库
+//        FlowManager.init(new FlowConfig.Builder(app())
+//                .openDatabasesOnInit(true) // 数据库初始化的时候就开始打开
+//                .build());
+
+        // 持久化的数据进行初始化
+        Account.load(app());
     }
 
     /**
@@ -122,6 +133,10 @@ public class Factory {
     }
 
     private void logout() {
+
+    }
+
+    public static void dispatchPush(String message) {
 
     }
 }
