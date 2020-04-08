@@ -1,5 +1,6 @@
 package com.example.chatEats.factory.data.helper;
 
+import com.example.chatEats.factory.Factory;
 import com.example.chatEats.factory.R;
 import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.model.api.RspModel;
@@ -35,32 +36,33 @@ public class AccountHelper {
                         callback.onDataLoaded(user);
                     }
                     else {
-                        callback.onDataLoaded(accountRspModel.getUser());
-                        //bindPush(callback);
+                        //callback.onDataLoaded(accountRspModel.getUser());
+                        bindPush(callback);
                     }
 
                 }
                 else {
-                    //callback.onDataNotAvailable();
+                    Factory.decodeRspCode(rspModel, callback);
                 }
             }
 
             @Override
             public void onFailure(Call<RspModel<AccountRspModel>> call, Throwable t) {
-                if (t instanceof IOException) {
-                    t.printStackTrace();
-                    callback.onDataNotAvailable(R.string.data_network_error);
-                }
-                else {
-                    callback.onDataNotAvailable(R.string.data_rsp_error_unknown);
-                }
-
+//                if (t instanceof IOException) {
+//                    t.printStackTrace();
+//                    callback.onDataNotAvailable(R.string.data_network_error);
+//                }
+//                else {
+//                    callback.onDataNotAvailable(R.string.data_rsp_error_unknown);
+//                }
+                callback.onDataNotAvailable(R.string.data_network_error);
             }
         });
     }
 
 
     public static void bindPush(final DataSource.Callback<User> callback) {
+        callback.onDataNotAvailable(R.string.app_name);
         // 检查是否为空
 //        String pushId = Account.getPushId();
 //        if (TextUtils.isEmpty(pushId))
