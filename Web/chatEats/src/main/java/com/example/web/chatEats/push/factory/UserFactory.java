@@ -1,12 +1,15 @@
 package com.example.web.chatEats.push.factory;
 
 import com.example.web.chatEats.push.bean.db.User;
+import com.example.web.chatEats.push.bean.db.UserFollow;
 import com.example.web.chatEats.push.utils.Hib;
 import com.example.web.chatEats.push.utils.TextUtil;
 import com.google.common.base.Strings;
 
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class UserFactory {
     public static User findByToken(String token) {
@@ -34,6 +37,11 @@ public class UserFactory {
                     .setParameter("inName", name).uniqueResult();
             return user;
         });
+    }
+
+    public static User findById(String id) {
+        // 通过Id查询，更方便
+        return Hib.query(session -> session.get(User.class, id));
     }
 
     public static User update(User user) {
@@ -131,4 +139,83 @@ public class UserFactory {
         password = TextUtil.getMD5(password);
         return TextUtil.encodeBase64(password);
     }
+
+    public static List<User> contacts(User self) {
+        return Hib.query(session -> {
+            // 重新加载一次用户信息到self中，和当前的session绑定
+            session.load(self, self.getId());
+
+            // 获取我关注的人
+            Set<UserFollow> flows = self.getFollowing();
+
+            // 使用简写方式
+            return flows.stream()
+                    .map(UserFollow::getTarget)
+                    .collect(Collectors.toList());
+
+        });
+    }
+
+    public static User follow(final User origin, final User target, final String alias) {
+        UserFollow follow = getUserFollow(origin, target);
+        if (follow != null) {
+            // 已关注，直接返回
+            return follow.getTarget();
+        }
+
+        return Hib.query(session -> {
+            // 想要操作懒加载的数据，需要重新load一次
+            session.load(origin, origin.getId());
+            session.load(target, target.getId());
+
+            // 我关注人的时候，同时他也关注我，
+            // 所有需要添加两条UserFollow数据
+            UserFollow originFollow = new UserFollow();
+            originFollow.setOrigin(origin);
+            originFollow.setTarget(target);
+            // 备注是我对他的备注，他对我默认没有备注
+            originFollow.setAlias(alias);
+
+            // 发起者是他，我是被关注的人的记录
+            UserFollow targetFollow = new UserFollow();
+            targetFollow.setOrigin(target);
+            targetFollow.setTarget(origin);
+
+            // 保存数据库
+            session.save(originFollow);
+            session.save(targetFollow);
+
+            return target;
+        });
+    }
+
+    public static UserFollow getUserFollow(final User origin, final User target) {
+        return Hib.query(session -> (UserFollow) session
+                .createQuery("from UserFollow where originId = :originId and targetId = :targetId")
+                .setParameter("originId", origin.getId())
+                .setParameter("targetId", target.getId())
+                .setMaxResults(1)
+                // 唯一查询返回
+                .uniqueResult());
+    }
+
+    @SuppressWarnings("unchecked")
+    public static List<User> search(String name) {
+        if (Strings.isNullOrEmpty(name))
+            name = ""; // 保证不能为null的情况，减少后面的一下判断和额外的错误
+        final String searchName = "%" + name + "%"; // 模糊匹配
+
+        return Hib.query(session -> {
+            // 查询的条件：name忽略大小写，并且使用like（模糊）查询；
+            // 头像和描述必须完善才能查询到
+            return (List<User>) session.createQuery("from User where lower(name) like :name and portrait is not null and description is not null")
+                    .setParameter("name", searchName)
+                    .setMaxResults(20) // 至多20条
+                    .list();
+
+        });
+
+    }
+
+
 }
