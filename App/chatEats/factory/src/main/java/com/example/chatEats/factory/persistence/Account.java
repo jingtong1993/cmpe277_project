@@ -12,7 +12,16 @@ public class Account {
     private static final String KEY_USER_ID = "KEY_USER_ID";
     private static final String KEY_ACCOUNT = "KEY_ACCOUNT";
 
-    private static String pushId = "test";
+    private static String pushId;
+    // 设备Id是否已经绑定到了服务器
+    private static boolean isBind;
+    // 登录状态的Token，用来接口请求
+    private static String token;
+    // 登录的用户ID
+    private static String userId;
+    // 登录的账户
+    private static String account;
+
 
     private static void save(Context context) {
         // 获取数据持久化的SP
@@ -21,7 +30,7 @@ public class Account {
         // 存储数据
         sp.edit()
                 .putString(KEY_PUSH_ID, pushId)
-//                .putBoolean(KEY_IS_BIND, isBind)
+                .putBoolean(KEY_IS_BIND, isBind)
 //                .putString(KEY_TOKEN, token)
 //                .putString(KEY_USER_ID, userId)
 //                .putString(KEY_ACCOUNT, account)
@@ -32,7 +41,7 @@ public class Account {
         SharedPreferences sp = context.getSharedPreferences(Account.class.getName(),
                 Context.MODE_PRIVATE);
         pushId = sp.getString(KEY_PUSH_ID, "");
-//        isBind = sp.getBoolean(KEY_IS_BIND, false);
+        isBind = sp.getBoolean(KEY_IS_BIND, false);
 //        token = sp.getString(KEY_TOKEN, "");
 //        userId = sp.getString(KEY_USER_ID, "");
 //        account = sp.getString(KEY_ACCOUNT, "");
@@ -53,6 +62,11 @@ public class Account {
     }
 
     public static boolean isBind() {
-        return false;
+        return isBind;
+    }
+
+    public static void setBind(boolean isBind) {
+        Account.isBind = isBind;
+        Account.save(Factory.app());
     }
 }

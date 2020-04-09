@@ -12,11 +12,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-                GETUI_APP_ID    : "8JpFbYKRIO6MqnwufoYAd1",
-                GETUI_APP_KEY   : "p9fRTAe3nTAjcyUBXNbRl",
-                GETUI_APP_SECRET: "qIznyvUEtt80gCPXnhnf79",
+                GETUI_APP_ID    : "Y3PyXobMJLAzhXhXjr8Vo7",
+                GETUI_APP_KEY   : "xUnVG3hx8G6ZPEdLFV1An3",
+                GETUI_APP_SECRET: "l931C33qoz5HjvN7dZ0yJ5",
                 PACKAGE_NAME    : applicationId
         ]
+
+        ndk {
+            // 注意：这里需要添加项目所需 CPU 类型的最小集
+            abiFilters "armeabi", "armeabi-v7a", "x86_64", "x86"
+        }
     }
     buildTypes {
         release {
@@ -52,7 +57,7 @@ dependencies {
     implementation "com.github.yalantis:ucrop:$ucropVersion"
     implementation 'pub.devrel:easypermissions:3.0.0'
 
-    implementation "com.getui:sdk:$rootProject.ext.getuiVersion"
+    implementation 'com.getui:sdk:2.14.0.0'
 
     implementation "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

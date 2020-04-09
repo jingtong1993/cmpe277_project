@@ -9,6 +9,7 @@ import com.example.chatEats.factory.model.api.account.RegisterModel;
 import com.example.chatEats.factory.model.db.User;
 import com.example.chatEats.factory.net.Network;
 import com.example.chatEats.factory.net.RemoteService;
+import com.example.chatEats.factory.persistence.Account;
 
 import java.io.IOException;
 
@@ -62,7 +63,8 @@ public class AccountHelper {
 
 
     public static void bindPush(final DataSource.Callback<User> callback) {
-        callback.onDataNotAvailable(R.string.app_name);
+        Account.setBind(true);
+
         // 检查是否为空
 //        String pushId = Account.getPushId();
 //        if (TextUtils.isEmpty(pushId))

@@ -27,15 +27,22 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <receiver
-            android:name=".MessageReceiver"
+<!--        <receiver-->
+<!--            android:name=".MessageReceiver"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"-->
+<!--            android:permission="1000">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+        <service
+            android:name=".AppMessageReceiverService"
             android:enabled="true"
             android:exported="true"
-            android:permission="1000">
-            <intent-filter>
-                <action android:name="com.igexin.sdk.action.${GETUI_APP_ID}" />
-            </intent-filter>
-        </receiver>
+            android:label="AppMessageReceiverService"
+            android:permission="1000" />
 
         <activity
             android:name=".LaunchActivity"
