@@ -2,8 +2,13 @@ package com.example.chatEats.factory.persistence;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.text.TextUtils;
 
 import com.example.chatEats.factory.Factory;
+import com.example.chatEats.factory.model.api.account.AccountRspModel;
+import com.example.chatEats.factory.model.db.User;
+import com.example.chatEats.factory.model.db.User_Table;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 public class Account {
     private static final String KEY_PUSH_ID = "KEY_PUSH_ID";
@@ -58,8 +63,24 @@ public class Account {
     }
 
     public static boolean isLogin() {
-        return true;
+        return !TextUtils.isEmpty(userId)
+                && !TextUtils.isEmpty(token);
     }
+
+
+    public static boolean isComplete() {
+//        // 首先保证登录成功
+//        if (isLogin()) {
+//            User self = getUser();
+//            return !TextUtils.isEmpty(self.getDesc())
+//                    && !TextUtils.isEmpty(self.getPortrait())
+//                    && self.getSex() != 0;
+//        }
+//        // 未登录返回信息不完全
+//        return false;
+        return isLogin();
+    }
+
 
     public static boolean isBind() {
         return isBind;
@@ -69,4 +90,22 @@ public class Account {
         Account.isBind = isBind;
         Account.save(Factory.app());
     }
+
+    public static void login(AccountRspModel model) {
+        // 存储当前登录的账户, token, 用户Id，方便从数据库中查询我的信息
+        Account.token = model.getToken();
+        Account.account = model.getAccount();
+        Account.userId = model.getUser().getId();
+        save(Factory.app());
+    }
+
+    public static User getUser() {
+        // 如果为null返回一个new的User，其次从数据库查询
+        return TextUtils.isEmpty(userId) ? new User() : SQLite.select()
+                .from(User.class)
+                .where(User_Table.id.eq(userId))
+                .querySingle();
+
+    }
+
 }

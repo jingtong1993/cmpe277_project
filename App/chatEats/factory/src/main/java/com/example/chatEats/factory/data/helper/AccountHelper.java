@@ -10,6 +10,7 @@ import com.example.chatEats.factory.model.db.User;
 import com.example.chatEats.factory.net.Network;
 import com.example.chatEats.factory.net.RemoteService;
 import com.example.chatEats.factory.persistence.Account;
+import com.raizlabs.android.dbflow.config.FlowManager;
 
 import java.io.IOException;
 
@@ -32,8 +33,13 @@ public class AccountHelper {
                 if (rspModel.success()) {
                     AccountRspModel accountRspModel = rspModel.getResult();
 
+                    User user = accountRspModel.getUser();
+                    user.save();
+
+                    Account.login(accountRspModel);
+
                     if (accountRspModel.isBind()) {
-                        User user = accountRspModel.getUser();
+
                         callback.onDataLoaded(user);
                     }
                     else {
