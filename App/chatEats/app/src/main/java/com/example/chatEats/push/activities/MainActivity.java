@@ -2,6 +2,7 @@ package com.example.chatEats.push.activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +18,7 @@ import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.ViewTarget;
 import com.example.chatEats.common.app.Activity;
 import com.example.chatEats.common.widget.PortraitView;
+import com.example.chatEats.factory.persistence.Account;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.frags.main.ActiveFragment;
 import com.example.chatEats.push.frags.main.ContactFragment;
@@ -60,6 +62,16 @@ public class MainActivity extends Activity
         context.startActivity(new Intent(context, MainActivity.class));
     }
 
+    @Override
+    protected boolean initArgs(Bundle bundle) {
+        if(Account.isComplete()) {
+            // 判断用户信息是否完全，完全则走正常流程
+            return super.initArgs(bundle);
+        }else{
+            UserActivity.show(this);
+            return false;
+        }
+    }
 
     @Override
     protected int getContentLayoutId() { return R.layout.activity_main; }

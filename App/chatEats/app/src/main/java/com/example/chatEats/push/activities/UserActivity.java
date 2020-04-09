@@ -17,7 +17,7 @@ import com.example.chatEats.push.R;
 import com.example.chatEats.push.frags.user.UpdateInfoFragment;
 
 import net.qiujuer.genius.ui.compat.UiCompat;
-import net.qiujuer.genius.ui.widget.ImageView;
+import android.widget.ImageView;
 
 import butterknife.BindView;
 

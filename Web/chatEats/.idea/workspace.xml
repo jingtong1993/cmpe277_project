@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/api/account/LoginModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/data/helper/AccountHelper.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/data/helper/AccountHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/Network.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/Network.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/default_holder_add.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/ic_add.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/ic_sex_man.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/ic_sex_woman.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/sel_bg_sex.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/data/helper/UserHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/api/user/UserUpdateModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/card/UserCard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/user/UpdateInfoContract.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/user/UpdateInfoPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/activities/MainActivity.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/activities/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/activities/UserActivity.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/activities/UserActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/user/UpdateInfoFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/user/UpdateInfoFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/activity_user.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/activity_user.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_gallery.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_gallery.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_update_info.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_update_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/RemoteService.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/RemoteService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/LoginPresenter.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/LoginPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/RegisterPresenter.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/RegisterPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/persistence/Account.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/persistence/Account.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1030,12 +1043,12 @@
       <workItem from="1585812325462" duration="5493000" />
       <workItem from="1585857404754" duration="3226000" />
       <workItem from="1586326211296" duration="323000" />
-      <workItem from="1586327697433" duration="1138000" />
+      <workItem from="1586327697433" duration="4495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10189000" />
+    <option name="totallyTimeSpent" value="13546000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,7 +1071,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15164521" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15164521" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
