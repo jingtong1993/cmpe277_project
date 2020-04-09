@@ -8,6 +8,7 @@ import com.example.chatEats.factory.data.DataSource;
 import com.example.chatEats.factory.data.helper.AccountHelper;
 import com.example.chatEats.factory.model.api.account.RegisterModel;
 import com.example.chatEats.factory.model.db.User;
+import com.example.chatEats.factory.persistence.Account;
 import com.example.chatEats.factory.presenter.BasePresenter;
 
 import net.qiujuer.genius.kit.handler.Run;
@@ -41,7 +42,7 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View> impl
         } else {
             // 进行网络请求
             // 构造Model，进行请求调用
-            RegisterModel model = new RegisterModel(phone, password, name);
+            RegisterModel model = new RegisterModel(phone, password, name, Account.getPushId());
             // 进行网络请求，并设置回送接口为自己
             AccountHelper.register(model, this);
         }

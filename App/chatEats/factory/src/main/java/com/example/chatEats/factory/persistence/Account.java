@@ -36,9 +36,9 @@ public class Account {
         sp.edit()
                 .putString(KEY_PUSH_ID, pushId)
                 .putBoolean(KEY_IS_BIND, isBind)
-//                .putString(KEY_TOKEN, token)
-//                .putString(KEY_USER_ID, userId)
-//                .putString(KEY_ACCOUNT, account)
+                .putString(KEY_TOKEN, token)
+                .putString(KEY_USER_ID, userId)
+                .putString(KEY_ACCOUNT, account)
                 .apply();
     }
 
@@ -47,9 +47,9 @@ public class Account {
                 Context.MODE_PRIVATE);
         pushId = sp.getString(KEY_PUSH_ID, "");
         isBind = sp.getBoolean(KEY_IS_BIND, false);
-//        token = sp.getString(KEY_TOKEN, "");
-//        userId = sp.getString(KEY_USER_ID, "");
-//        account = sp.getString(KEY_ACCOUNT, "");
+        token = sp.getString(KEY_TOKEN, "");
+        userId = sp.getString(KEY_USER_ID, "");
+        account = sp.getString(KEY_ACCOUNT, "");
     }
 
 
@@ -108,4 +108,7 @@ public class Account {
 
     }
 
+    public static String getToken() {
+        return token;
+    }
 }

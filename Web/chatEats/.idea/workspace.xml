@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="" />
+    <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/api/account/LoginModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/data/helper/AccountHelper.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/data/helper/AccountHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/Network.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/Network.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/RemoteService.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/net/RemoteService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/LoginPresenter.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/LoginPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/RegisterPresenter.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/account/RegisterPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1022,12 +1030,12 @@
       <workItem from="1585812325462" duration="5493000" />
       <workItem from="1585857404754" duration="3226000" />
       <workItem from="1586326211296" duration="323000" />
-      <workItem from="1586327697433" duration="1028000" />
+      <workItem from="1586327697433" duration="1138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10079000" />
+    <option name="totallyTimeSpent" value="10189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,7 +1047,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="794" extended-state="1" />
+    <frame x="0" y="23" width="1440" height="794" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
