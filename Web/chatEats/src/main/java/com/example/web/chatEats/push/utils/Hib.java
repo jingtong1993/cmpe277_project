@@ -7,8 +7,11 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Hib {
+    private static final Logger LOGGER = Logger.getLogger(Hib.class.getName());
     // 全局SessionFactory
     private static SessionFactory sessionFactory;
 
@@ -32,6 +35,10 @@ public class Hib {
             // 错误则打印输出，并销毁
             StandardServiceRegistryBuilder.destroy(registry);
         }
+    }
+
+    public static void setup() {
+        LOGGER.log(Level.INFO, "Hibernate setup succeed!");
     }
 
     /**
@@ -61,53 +68,76 @@ public class Hib {
         }
     }
 
-    public interface Query<T>{
-        T query(Session session);
-    }
 
-    public interface QueryOnly{
+    // 用户的实际的操作的一个接口
+    public interface QueryOnly {
         void query(Session session);
     }
 
+    // 简化Session事物操的一个工具方法
     public static void queryOnly(QueryOnly query) {
+        // 重开一个Session
         Session session = sessionFactory.openSession();
+        // 开启事物
         final Transaction transaction = session.beginTransaction();
 
         try {
+            // 调用传递进来的接口，
+            // 并调用接口的方法把Session传递进去
             query.query(session);
+            // 提交
             transaction.commit();
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            // 回滚
             try {
                 transaction.rollback();
-            }catch (RuntimeException e1) {
+            } catch (RuntimeException e1) {
                 e1.printStackTrace();
             }
-
-        }finally {
+        } finally {
+            // 无论成功失败，都需要关闭Session
             session.close();
         }
     }
 
-    public static<T> T query(Query<T> query) {
+
+    // 用户的实际的操作的一个接口
+    // 具有返回值T
+    public interface Query<T> {
+        T query(Session session);
+    }
+
+    // 简化Session操作的工具方法，
+    // 具有一个返回值
+    public static <T> T query(Query<T> query) {
+        // 重开一个Session
         Session session = sessionFactory.openSession();
+        // 开启事物
         final Transaction transaction = session.beginTransaction();
 
         T t = null;
         try {
+            // 调用传递进来的接口，
+            // 并调用接口的方法把Session传递进去
             t = query.query(session);
+            // 提交
             transaction.commit();
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            // 回滚
             try {
                 transaction.rollback();
-            }catch (RuntimeException e1) {
+            } catch (RuntimeException e1) {
                 e1.printStackTrace();
             }
-        }finally {
+        } finally {
+            // 无论成功失败，都需要关闭Session
             session.close();
         }
 
         return t;
     }
+
+
 }

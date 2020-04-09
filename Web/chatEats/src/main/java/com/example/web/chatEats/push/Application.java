@@ -2,7 +2,7 @@ package com.example.web.chatEats.push;
 
 import com.example.web.chatEats.push.provider.AuthRequestFilter;
 import com.example.web.chatEats.push.provider.GsonProvider;
-import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
+//import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 import com.example.web.chatEats.push.service.AccountService;
 import org.glassfish.jersey.server.ResourceConfig;
 
