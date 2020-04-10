@@ -22,7 +22,7 @@
             android:paddingRight="@dimen/len_4">
 
             <com.example.chatEats.common.widget.PortraitView
-                android:id="@+id/image_portrait"
+                android:id="@+id/im_portrait"
                 android:padding="@dimen/len_4"
                 android:layout_margin="@dimen/len_4"
                 android:layout_width="@dimen/len_40"

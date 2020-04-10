@@ -3,6 +3,8 @@ package com.example.chatEats.common.app;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import com.example.chatEats.common.widget.convention.PlaceHolderView;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -12,6 +14,7 @@ import java.util.List;
 import butterknife.ButterKnife;
 
 public abstract class Activity extends AppCompatActivity {
+    protected PlaceHolderView mPlaceHolderView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,12 +24,16 @@ public abstract class Activity extends AppCompatActivity {
         if(initArgs(getIntent().getExtras())) {
             int layId = getContentLayoutId();
             setContentView(layId);
+            initBefore();
             initWidget();
             initData();
         }
         else {
             finish();
         }
+
+    }
+    protected void initBefore(){
 
     }
 
@@ -69,5 +76,8 @@ public abstract class Activity extends AppCompatActivity {
         }
         super.onBackPressed();
         finish();
+    }
+    public void setPlaceHolderView(PlaceHolderView placeHolderView) {
+        this.mPlaceHolderView = placeHolderView;
     }
 }

@@ -18,6 +18,7 @@ import com.example.chatEats.factory.presenter.contact.ContactContract;
 import com.example.chatEats.factory.presenter.contact.ContactPresenter;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.activities.MessageActivity;
+import com.example.chatEats.push.activities.PersonalActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -61,6 +62,7 @@ public class ContactFragment extends PresenterFragment<ContactContract.Presenter
             protected ViewHolder<User> onCreateViewHolder(View root, int viewType) {
                 return new ContactFragment.ViewHolder(root);
             }
+
         });
 
         // 点击事件监听
@@ -126,10 +128,10 @@ public class ContactFragment extends PresenterFragment<ContactContract.Presenter
             mDesc.setText(user.getDesc());
         }
 
-//        @OnClick(R.id.im_portrait)
-//        void onPortraitClick() {
-//            // 显示信息
-//            PersonalActivity.show(getContext(), mData.getId());
-//        }
+        @OnClick(R.id.im_portrait)
+        void onPortraitClick() {
+            // 显示信息
+            PersonalActivity.show(getContext(), mData.getId());
+        }
     }
 }

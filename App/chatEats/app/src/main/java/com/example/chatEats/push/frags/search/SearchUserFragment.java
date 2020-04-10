@@ -18,6 +18,7 @@ import com.example.chatEats.factory.presenter.contact.FollowPresenter;
 import com.example.chatEats.factory.presenter.search.SearchContract;
 import com.example.chatEats.factory.presenter.search.SearchUserPresenter;
 import com.example.chatEats.push.R;
+import com.example.chatEats.push.activities.PersonalActivity;
 import com.example.chatEats.push.activities.SearchActivity;
 
 import net.qiujuer.genius.ui.Ui;
@@ -125,6 +126,12 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
             mPortraitView.setup(Glide.with(getContext()), userCard);
             mName.setText(userCard.getName());
             mFollow.setEnabled(!userCard.isFollow());
+        }
+
+        @OnClick(R.id.im_portrait)
+        void onPortraitClick() {
+            //显示信息
+            PersonalActivity.show(getContext(), mData.getId());
         }
 
         @OnClick(R.id.im_follow)

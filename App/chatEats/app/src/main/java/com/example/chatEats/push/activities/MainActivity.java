@@ -41,8 +41,10 @@ public class MainActivity extends Activity
     @BindView(R.id.appbar)
     View mLayAppbar;
 
-    @BindView(R.id.image_portrait)
+    @BindView(R.id.im_portrait)
     PortraitView mPortrait;
+    //image_portrait -> im_portrait
+
 
     @BindView(R.id.text_title)
     TextView mTitle;
@@ -104,6 +106,14 @@ public class MainActivity extends Activity
         super.initData();
         Menu menu = mNavigation.getMenu();
         menu.performIdentifierAction(R.id.action_home, 0);
+
+        // 初始化头像加载
+        mPortrait.setup(Glide.with(this), Account.getUser());
+    }
+
+    @OnClick(R.id.im_portrait)
+    void onPortraitClick() {
+        PersonalActivity.show(this, Account.getUserId());
     }
 
     @OnClick(R.id.image_search)
