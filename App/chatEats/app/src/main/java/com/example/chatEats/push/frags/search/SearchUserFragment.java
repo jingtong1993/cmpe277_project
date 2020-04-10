@@ -1,12 +1,6 @@
 package com.example.chatEats.push.frags.search;
 
-
-import android.os.Bundle;
-
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.chatEats.common.app.Fragment;
 import com.example.chatEats.common.app.PresenterFragment;
 import com.example.chatEats.common.widget.EmptyView;
 import com.example.chatEats.common.widget.PortraitView;
@@ -31,7 +24,6 @@ import net.qiujuer.genius.ui.Ui;
 import net.qiujuer.genius.ui.compat.UiCompat;
 import net.qiujuer.genius.ui.drawable.LoadingCircleDrawable;
 import net.qiujuer.genius.ui.drawable.LoadingDrawable;
-
 import java.util.List;
 
 import butterknife.BindView;
@@ -130,11 +122,7 @@ public class SearchUserFragment extends PresenterFragment<SearchContract.Present
         //SearchUserFragment.this
         @Override
         protected void onBind(UserCard userCard) {
-            Glide.with(getContext())
-                    .load(userCard.getPortrait())
-                    .centerCrop()
-                    .into(mPortraitView);
-
+            mPortraitView.setup(Glide.with(getContext()), userCard);
             mName.setText(userCard.getName());
             mFollow.setEnabled(!userCard.isFollow());
         }

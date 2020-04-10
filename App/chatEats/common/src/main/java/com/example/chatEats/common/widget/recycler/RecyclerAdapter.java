@@ -74,6 +74,10 @@ public abstract class RecyclerAdapter<Data>
         return mDataList.size();
     }
 
+    public List<Data> getItems() {
+        return mDataList;
+    }
+
     public void add(Data data) {
         mDataList.add(data);
         notifyItemInserted(mDataList.size()-1);

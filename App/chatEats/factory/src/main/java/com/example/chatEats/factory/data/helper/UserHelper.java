@@ -75,6 +75,28 @@ public class UserHelper {
         return call;
     }
 
+    public static void refreshContacts(final DataSource.Callback<List<UserCard>> callback) {
+        RemoteService service = Network.remote();
+        service.userContacts()
+                .enqueue(new Callback<RspModel<List<UserCard>>>() {
+                    @Override
+                    public void onResponse(Call<RspModel<List<UserCard>>> call, Response<RspModel<List<UserCard>>> response) {
+                        RspModel<List<UserCard>> rspModel = response.body();
+                        if (rspModel.success()) {
+                            // 返回数据
+                            callback.onDataLoaded(rspModel.getResult());
+                        } else {
+                            Factory.decodeRspCode(rspModel, callback);
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<RspModel<List<UserCard>>> call, Throwable t) {
+                        callback.onDataNotAvailable(R.string.data_network_error);
+                    }
+                });
+    }
+
     public static void follow(String id, final DataSource.Callback<UserCard> callback) {
         RemoteService service = Network.remote();
         Call<RspModel<UserCard>> call = service.userFollow(id);
