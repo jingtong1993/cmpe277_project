@@ -9,12 +9,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.chatEats.common.widget.convention.PlaceHolderView;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 public abstract class Fragment extends androidx.fragment.app.Fragment {
     protected View mRoot;
     protected Unbinder mRootUnBinder;
+    protected PlaceHolderView mPlaceHolderView;
+    // 标示是否第一次初始化数据
+    protected boolean mIsFirstInitData = true;
+
 
     @Override
     public void onAttach(Context context) {
@@ -64,5 +70,9 @@ public abstract class Fragment extends androidx.fragment.app.Fragment {
 
     public boolean onBackPressed() {
         return false;
+    }
+
+    public void setPlaceHolderView(PlaceHolderView placeHolderView) {
+        this.mPlaceHolderView = placeHolderView;
     }
 }

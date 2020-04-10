@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Lang</string>
+
+    <string name="btn_follow">Follow</string>
+    <string name="btn_send_start">Start chat</string>
+    <string name="btn_preview">Preview</string>
+    <string name="btn_send">Send</string>
+
 </resources>

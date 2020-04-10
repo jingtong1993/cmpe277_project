@@ -3,4 +3,7 @@
     <string name="action_home">Home</string>
     <string name="action_group">Group</string>
     <string name="action_contact">Contact</string>
+    <string name="action_add">Add</string>
+    <string name="action_person">User Info</string>
+    <string name="action_follow">Follow</string>
 </resources>

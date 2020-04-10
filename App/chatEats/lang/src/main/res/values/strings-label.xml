@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="label_gallery_select_max_size">Choose At Most%dPhotos</string>
-
-
     <string name="label_permission_network">Network Authorize</string>
     <string name="label_permission_network_desc">For Instant Message Use</string>
     <string name="label_permission_read">Read File</string>
@@ -30,4 +27,24 @@
     <string name="label_sex_woman">Female</string>
     <string name="label_go_register">No Account? Register</string>
     <string name="label_go_login">Already Have Account? Login</string>
+
+    <string name="label_follows">Follows\n%s</string>
+    <string name="label_following">Following\n%s</string>
+    <string name="label_gallery_select_max_size">Choose At Most%sPhotos</string>
+    <string name="label_gallery_selected_size">Already choose%sPhotos</string>
+
+    <string name="label_group_name">Group name</string>
+    <string name="label_group_desc">Group description</string>
+    <string name="label_group_member_select">Group member</string>
+
+    <string name="label_group_create_invalid">All fields are required and at least one member is selected</string>
+    <string name="label_group_member_add_invalid">No new members</string>
+    <string name="label_group_create_succeed">Group created successfully</string>
+
+    <string name="label_chat_edit_hint">Type something to send…</string>
+
+    <string name="toast_audio_play_error">Play error</string>
+    <string name="toast_audio_record_time_short_error">Record time too short</string>
+
+    <string name="toast_download_error">Download failed</string>
 </resources>

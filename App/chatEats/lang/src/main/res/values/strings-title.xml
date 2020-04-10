@@ -4,6 +4,13 @@
     <string name="title_group">Group</string>
     <string name="title_contact">Contact</string>
 
+    <string name="title_search">Search</string>
+    <string name="title_search_user">Search for user</string>
+    <string name="title_search_group">Search for group</string>
+
     <string name="title_select_gallery">Choose Photos</string>
     <string name="title_assist_permissions">Authorize</string>
+
+    <string name="title_member_list">Member</string>
+    <string name="title_member_add">Add new member</string>
 </resources>
