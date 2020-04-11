@@ -5,6 +5,12 @@ import androidx.annotation.StringRes;
 
 import com.example.chatEats.common.app.Application;
 import com.example.chatEats.factory.data.DataSource;
+import com.example.chatEats.factory.data.group.GroupCenter;
+import com.example.chatEats.factory.data.group.GroupDispatcher;
+import com.example.chatEats.factory.data.message.MessageCenter;
+import com.example.chatEats.factory.data.message.MessageDispatcher;
+import com.example.chatEats.factory.data.user.UserCenter;
+import com.example.chatEats.factory.data.user.UserDispatcher;
 import com.example.chatEats.factory.model.api.RspModel;
 import com.example.chatEats.factory.persistence.Account;
 import com.example.chatEats.factory.utils.DBFlowExclusionStrategy;
@@ -141,5 +147,16 @@ public class Factory {
 
     public static void dispatchPush(String message) {
 
+    }
+
+    public static UserCenter getUserCenter(){
+        return UserDispatcher.instance();
+    }
+
+    public static MessageCenter getMessageCenter(){
+        return MessageDispatcher.instance();
+    }
+    public static GroupCenter getGroupCenter() {
+        return GroupDispatcher.instance();
     }
 }

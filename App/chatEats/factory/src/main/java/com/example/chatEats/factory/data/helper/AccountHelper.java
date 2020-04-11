@@ -74,7 +74,8 @@ public class AccountHelper {
                 // 获取我的信息
                 User user = accountRspModel.getUser();
                 // 第一种，之间保存
-                user.save();
+                //user.save();
+                DbHelper.save(User.class, user);
 
                 // 同步到XML持久化中
                 Account.login(accountRspModel);
