@@ -28,7 +28,6 @@ public class PushDispatcher {
     private final IGtPush pusher;
     // 要收到消息的人和内容的列表
     private final List<BatchBean> beans = new ArrayList<>();
-
     public PushDispatcher() {
         // 最根本的发送者
         pusher = new IGtPush(host, appKey, masterSecret);

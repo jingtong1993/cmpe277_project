@@ -10,6 +10,8 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_GROUP_MEMBER")
 public class GroupMember {
+
+
     public static final int PERMISSION_TYPE_NONE = 0;
     public static final int PERMISSION_TYPE_ADMIN = 1;
     public static final int PERMISSION_TYPE_ADMIN_SU = 100;
@@ -54,6 +56,7 @@ public class GroupMember {
     private Group group;
     @Column(nullable = false, updatable = false, insertable = false)
     private String groupId;
+
 
     public String getId() {
         return id;

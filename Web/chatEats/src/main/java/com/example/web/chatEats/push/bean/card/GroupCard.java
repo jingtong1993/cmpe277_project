@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 
  */
 public class GroupCard {
+    /*
     @Expose
     private String id;// Id
     @Expose
@@ -114,5 +115,5 @@ public class GroupCard {
 
     public void setModifyAt(LocalDateTime modifyAt) {
         this.modifyAt = modifyAt;
-    }
+    }*/
 }

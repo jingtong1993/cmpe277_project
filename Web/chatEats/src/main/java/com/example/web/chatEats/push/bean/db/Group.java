@@ -1,6 +1,7 @@
 package com.example.web.chatEats.push.bean.db;
 
 
+//import com.example.web.chatEats.push.bean.api.group.GroupCreateModel;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;

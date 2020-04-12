@@ -1,6 +1,7 @@
 package com.example.web.chatEats.push.bean.db;
 
 
+import com.example.web.chatEats.push.bean.api.message.MessageCreateModel;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -11,6 +12,11 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "TB_MESSAGE")
 public class Message {
+    // 发送给人的
+    public static final int RECEIVER_TYPE_NONE = 1;
+    // 发送给群的
+    public static final int RECEIVER_TYPE_GROUP = 2;
+
     public static final int TYPE_STR = 1;
     public static final int TYPE_PIC = 2;
     public static final int TYPE_FILE = 3;
@@ -53,10 +59,37 @@ public class Message {
     private String receiverId;
 
     @JoinColumn(name = "groupId")
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = true)
+    //for 9-6 测试， 应该是False
     private Group group;
     @Column(updatable = false, insertable = false)
     private String groupId;
+
+    public Message() {
+
+    }
+
+    // 普通朋友的发送的构造函数
+    public Message(User sender, User receiver, MessageCreateModel model) {
+        this.id = model.getId();
+        this.content = model.getContent();
+        this.attach = model.getAttach();
+        this.type = model.getType();
+
+        this.sender = sender;
+        this.receiver = receiver;
+    }
+
+    // 发送给群的构造函数
+    public Message(User sender, Group group, MessageCreateModel model) {
+        this.id = model.getId();
+        this.content = model.getContent();
+        this.attach = model.getAttach();
+        this.type = model.getType();
+
+        this.sender = sender;
+        this.group = group;
+    }
 
     public String getId() {
         return id;
