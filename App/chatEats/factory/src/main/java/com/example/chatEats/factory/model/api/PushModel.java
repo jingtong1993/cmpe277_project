@@ -68,19 +68,20 @@ public class PushModel {
         public Entity() {
 
         }
-
         // 消息类型
         public int type;
         // 消息实体
         public String content;
         // 消息生成时间
         public Date createAt;
-    }
 
-    @Override
-    public String toString() {
-        return "PushModel{" +
-                "entities=" + entities +
-                '}';
+        @Override
+        public String toString() {
+            return "Entity{" +
+                    "type=" + type +
+                    ", content='" + content + '\'' +
+                    ", createAt=" + createAt +
+                    '}';
+        }
     }
 }

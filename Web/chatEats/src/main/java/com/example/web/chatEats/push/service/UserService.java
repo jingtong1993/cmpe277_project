@@ -1,11 +1,13 @@
 package com.example.web.chatEats.push.service;
 
 
+import com.example.web.chatEats.push.bean.api.base.PushModel;
 import com.example.web.chatEats.push.bean.api.base.ResponseModel;
 import com.example.web.chatEats.push.bean.api.user.UpdateInfoModel;
 import com.example.web.chatEats.push.bean.card.UserCard;
 import com.example.web.chatEats.push.bean.db.User;
 import com.example.web.chatEats.push.factory.UserFactory;
+import com.example.web.chatEats.push.utils.PushDispatcher;
 import com.google.common.base.Strings;
 
 import javax.ws.rs.*;
@@ -24,7 +26,6 @@ public class UserService extends BaseService{
             return ResponseModel.buildParameterError();
         }
         User self = getSelf();
-
         self = model.updateToUser(self);
         self = UserFactory.update(self);
         UserCard card = new UserCard(self, true);
@@ -38,6 +39,13 @@ public class UserService extends BaseService{
     @Produces(MediaType.APPLICATION_JSON)
     public ResponseModel<List<UserCard>> contact() {
         User self = getSelf();
+        //test
+        // PushModel model = new PushModel();
+        //model.add(new PushModel.Entity(0, "hello! It's me"));
+        //PushDispatcher dispatcher = new PushDispatcher();
+        //dispatcher.add(self, model);
+        //dispatcher.submit();
+
         // 拿到我的联系人
         List<User> users = UserFactory.contacts(self);
         // 转换为UserCard
