@@ -82,7 +82,7 @@ public class ChatPresenter<View extends ChatContract.View>
         @SuppressWarnings("unchecked")
         List<Message> old = view.getRecyclerAdapter().getItems();
 
-        messages = messages.subList(0, 5);
+        //messages = messages.subList(0, 5);
 
         // 差异计算
         DiffUiDataCallback<Message> callback = new DiffUiDataCallback<>(old, messages);
