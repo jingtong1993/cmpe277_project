@@ -10,6 +10,8 @@ import android.text.TextUtils;
 import com.example.chatEats.common.app.Fragment;
 import com.example.chatEats.factory.model.Author;
 import com.example.chatEats.factory.model.db.Group;
+import com.example.chatEats.factory.model.db.Message;
+import com.example.chatEats.factory.model.db.Session;
 import com.example.chatEats.push.R;
 import com.example.chatEats.push.frags.message.ChatGroupFragment;
 import com.example.chatEats.push.frags.message.ChatUserFragment;
@@ -22,6 +24,15 @@ public class MessageActivity extends Activity {
 
     private String mReceiverId;
     private boolean mIsGroup;
+
+    public static void show(Context context, Session session) {
+        if (session == null || context == null || TextUtils.isEmpty(session.getId()))
+            return;
+        Intent intent = new Intent(context, MessageActivity.class);
+        intent.putExtra(KEY_RECEIVER_ID, session.getId());
+        intent.putExtra(KEY_RECEIVER_IS_GROUP, session.getReceiverType() == Message.RECEIVER_TYPE_GROUP);
+        context.startActivity(intent);
+    }
 
     public static void show(Context context, Author author) {
         if (author == null || context == null || TextUtils.isEmpty(author.getId()))

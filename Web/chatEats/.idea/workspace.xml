@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatUserFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatUserFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_chat_user.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_chat_user.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/Common.java" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/Common.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/lang/src/main/res/values/strings-label.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/lang/src/main/res/values/strings-label.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___chatEats_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___chatEats_1_0_SNAPSHOT_war__exploded_.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java" />
-    </list>
+    <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1325,12 +1316,12 @@
       <workItem from="1585857404754" duration="3226000" />
       <workItem from="1586326211296" duration="323000" />
       <workItem from="1586327697433" duration="12457000" />
-      <workItem from="1586629842895" duration="6287000" />
+      <workItem from="1586629842895" duration="8305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27795000" />
+    <option name="totallyTimeSpent" value="29813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1342,7 +1333,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="794" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="794" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1772,19 +1763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/PushFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
@@ -1804,6 +1782,19 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER_FOLLOW">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

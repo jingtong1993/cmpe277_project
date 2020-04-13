@@ -143,7 +143,7 @@ public class ChatUserFragment extends ChatFragment<User>
     @Override
     public void onInit(User user) {
         // 对和你聊天的朋友的信息进行初始化操作
-        int a;
+
         mPortrait.setup(Glide.with(getContext()), user.getPortrait());
         mCollapsingLayout.setTitle(user.getName());
     }
