@@ -231,7 +231,7 @@ public abstract class ChatFragment<InitModel>
             // 进行数据加载
             sender.load();
             // 头像加载
-            mPortrait.setup(Glide.with(ChatFragment.this), sender);
+            mPortrait.setup(Glide.with(getContext()), sender);
 
             if (mLoading != null) {
                 // 当前布局应该是在右边

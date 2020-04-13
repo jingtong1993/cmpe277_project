@@ -61,6 +61,10 @@
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.4" />
           <element id="library" level="project" name="Gradle: com.mchange:mchange-commons-java:0.2.11" />
           <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gexin.platform/gexin-rp-sdk-http/4.1.1.2/66d95f8aa07708882fac7008dc7275b96b39ad0e/gexin-rp-sdk-http-4.1.1.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gexin.platform/gexin-rp-sdk-template/4.0.0.27/8927f0b7bf3768df4ed91db796282259b4bab026/gexin-rp-sdk-template-4.0.0.27.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gexin.platform/gexin-rp-sdk-base/4.0.0.35/ec05d832ff2938c7a3b67ba1838b04bffc976476/gexin-rp-sdk-base-4.0.0.35.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gexin.platform/gexin-rp-fastjson/1.0.0.6/ca15c8e1c9b7ff5bd7150192023695960a59de14/gexin-rp-fastjson-1.0.0.6.jar" />
         </element>
       </element>
     </root>

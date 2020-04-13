@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1395a2b-3fb5-44ac-ad94-fd92abc3df46" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/activities/MessageActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/activity_message.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/cell_contact_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/factory/model/Author.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable-v21/bg_main_recycler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/bg_main_recycler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/res/drawable/ic_chat_bubble.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/contact/ContactContract.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/presenter/contact/ContactPresenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/main/ContactFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/main/ContactFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/search/SearchUserFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/search/SearchUserFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_contact.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_contact.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/app/Fragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/app/Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/widget/PortraitView.java" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/widget/PortraitView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/factory/presenter/BaseContract.java" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/factory/presenter/BaseContract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/build.gradle" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/card/UserCard.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/card/UserCard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/db/User.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/model/db/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/persistence/Account.java" afterPath="$PROJECT_DIR$/../../App/chatEats/factory/src/main/java/com/example/chatEats/factory/persistence/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatUserFragment.java" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/java/com/example/chatEats/push/frags/message/ChatUserFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_chat_user.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/app/src/main/res/layout/fragment_chat_user.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/Common.java" afterPath="$PROJECT_DIR$/../../App/chatEats/common/src/main/java/com/example/chatEats/common/Common.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../App/chatEats/lang/src/main/res/values/strings-label.xml" afterPath="$PROJECT_DIR$/../../App/chatEats/lang/src/main/res/values/strings-label.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___chatEats_1_0_SNAPSHOT_war__exploded_.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___org_example___chatEats_1_0_SNAPSHOT_war__exploded_.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -99,29 +87,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/UserFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="217" column="5" lean-forward="false" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="5" />
-              <folding>
-                <element signature="e#1774#1804#1" expanded="true" />
-                <element signature="e#6104#6134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1317">
-              <caret line="131" column="33" lean-forward="true" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DB_PUSH.TB_USER" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER">
           <provider editor-type-id="text-editor">
@@ -137,7 +102,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB_PUSH.TB_USER_FOLLOW" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DB_PUSH.TB_USER_FOLLOW" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER_FOLLOW">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -152,11 +117,49 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DB_PUSH.TB_MESSAGE" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_MESSAGE">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/PushFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-693">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>hibernate-</find>
+      <find>submit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -345,8 +348,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3168643333000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3702610628" />
+        <entry key="$PROJECT_DIR$" value="3169063569000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1706864407" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -457,6 +460,7 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/UserFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java" />
       </list>
     </option>
   </component>
@@ -476,7 +480,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="794" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -496,6 +500,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -636,7 +642,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatEats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatEats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="push" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatEats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatEats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="push" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,8 +807,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1260,12 +1324,13 @@
       <workItem from="1585812325462" duration="5493000" />
       <workItem from="1585857404754" duration="3226000" />
       <workItem from="1586326211296" duration="323000" />
-      <workItem from="1586327697433" duration="11564000" />
+      <workItem from="1586327697433" duration="12457000" />
+      <workItem from="1586629842895" duration="6287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20615000" />
+    <option name="totallyTimeSpent" value="27795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1277,12 +1342,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="794" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42877492" sideWeight="0.2546495" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43019944" sideWeight="0.25894135" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.4914163" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1299,11 +1364,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28025478" sideWeight="0.7453505" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4002849" sideWeight="0.74105865" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1595136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2267525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1334,42 +1399,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/UserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1774#1804#1" expanded="true" />
-            <element signature="e#6104#6134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1391,7 +1426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1399,13 +1433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1438,8 +1465,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <element signature="e#1774#1804#1" expanded="true" />
-            <element signature="e#6104#6134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1448,13 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1485,7 +1504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1535,13 +1553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1549,7 +1560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1574,8 +1584,7 @@
         <state relative-caret-position="1170">
           <caret line="84" column="24" lean-forward="false" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
           <folding>
-            <element signature="e#1774#1804#1" expanded="true" />
-            <element signature="e#6104#6134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1598,8 +1607,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding>
-            <element signature="e#1774#1804#1" expanded="true" />
-            <element signature="e#6104#6134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1608,13 +1616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1710,13 +1711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1228#1229#0" expanded="false" />
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1444#1445#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1732,7 +1726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1740,7 +1733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
           <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1748,26 +1740,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="46" column="37" lean-forward="true" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/UserFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
+        <state relative-caret-position="3120">
           <caret line="217" column="5" lean-forward="false" selection-start-line="217" selection-start-column="5" selection-end-line="217" selection-end-column="5" />
           <folding>
-            <element signature="e#1774#1804#1" expanded="true" />
-            <element signature="e#6104#6134#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1317">
-          <caret line="131" column="33" lean-forward="true" selection-start-line="131" selection-start-column="33" selection-end-line="131" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="1815">
+          <caret line="139" column="33" lean-forward="false" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1586735286299" expanded="true" signature="1629:1995" ph="{...}" />
+            <marker date="1586735286299" expanded="true" signature="2001:2133" ph="@{...}" />
+            <marker date="1586735286299" expanded="true" signature="2216:3013" ph="{...}" />
+            <marker date="1586735286299" expanded="true" signature="2896:2937" ph="//..." />
+            <marker date="1586735286299" expanded="true" signature="3019:3159" ph="@{...}" />
+            <marker date="1586735286299" expanded="true" signature="3231:3914" ph="{...}" />
+            <marker date="1586735286299" expanded="true" signature="3960:4165" ph="@{...}" />
+            <marker date="1586735286299" expanded="true" signature="4264:5233" ph="{...}" />
+            <marker date="1586735286299" expanded="true" signature="4382:4483" ph="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1784,7 +1785,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/factory/PushFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-693">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/web/chatEats/push/utils/PushDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_USER_FOLLOW">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/556418e5/6db73a00-58a3-4c07-9dd4-1b5bfaee6fff/DB_PUSH.TB_MESSAGE">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

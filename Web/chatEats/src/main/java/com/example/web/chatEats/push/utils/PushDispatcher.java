@@ -22,7 +22,7 @@ public class PushDispatcher {
     //应该就是build gradle(app)里面一样的Key把？ 9-1 10：40
     private static final String appId = "Y3PyXobMJLAzhXhXjr8Vo7";
     private static final String appKey = "xUnVG3hx8G6ZPEdLFV1An3";
-    private static final String masterSecret = "l931C33qoz5HjvN7dZ0yJ5";
+    private static final String masterSecret = "q4MYK43yYx6Gu7jE7GEnw8";
     private static final String host = "http://sdk.open.api.igexin.com/apiex.htm";
 
     private final IGtPush pusher;
