@@ -41,12 +41,14 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
     TextView mName;
     @BindView(R.id.txt_desc)
     TextView mDesc;
-    @BindView(R.id.txt_follows)
-    TextView mFollows;
-    @BindView(R.id.txt_following)
-    TextView mFollowing;
+//    @BindView(R.id.txt_follows)
+//    TextView mFollows;
+//    @BindView(R.id.txt_following)
+//    TextView mFollowing;
     @BindView(R.id.btn_say_hello)
     Button mSayHello;
+    @BindView(R.id.btn_logout)
+    Button mLogout;
 
     // 关注
     private MenuItem mFollowItem;
@@ -108,6 +110,16 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
         MessageActivity.show(this, user);
     }
 
+    @OnClick(R.id.btn_logout)
+    void onLogoutClick() {
+        // logout
+//        User user = mPresenter.getUserPersonal();
+//        if (user == null)
+//            return;
+        //MessageActivity.show(this, user);
+        AccountActivity.show(this);
+    }
+
 
     /**
      * 更改关注菜单状态
@@ -137,14 +149,15 @@ public class PersonalActivity extends PresenterToolbarActivity<PersonalContract.
         mPortrait.setup(Glide.with(this), user);
         mName.setText(user.getName());
         mDesc.setText(user.getDesc());
-        mFollows.setText(String.format(getString(R.string.label_follows), user.getFollows()));
-        mFollowing.setText(String.format(getString(R.string.label_following), user.getFollowing()));
+//        mFollows.setText(String.format(getString(R.string.label_follows), user.getFollows()));
+//        mFollowing.setText(String.format(getString(R.string.label_following), user.getFollowing()));
         hideLoading();
     }
 
     @Override
     public void allowSayHello(boolean isAllow) {
         mSayHello.setVisibility(isAllow ? View.VISIBLE : View.GONE);
+        mLogout.setVisibility(isAllow ? View.GONE : View.VISIBLE);
     }
 
     @Override

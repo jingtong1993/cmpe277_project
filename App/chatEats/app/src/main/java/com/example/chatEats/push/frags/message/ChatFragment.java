@@ -122,15 +122,6 @@ public abstract class ChatFragment<InitModel>
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
     }
 
-    @OnClick(R.id.btn_face)
-    void onFaceClick() {
-        // TODO
-    }
-
-    @OnClick(R.id.btn_record)
-    void onRecordClick() {
-        // TODO
-    }
 
     @OnClick(R.id.btn_submit)
     void onSubmitClick() {

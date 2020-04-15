@@ -83,23 +83,23 @@ public class ChatPresenter<View extends ChatContract.View>
         @SuppressWarnings("unchecked")
         List<Message> old = view.getRecyclerAdapter().getItems();
 
-//        List<Message> temp1 = new ArrayList<>();
-//        for (int i = 0; i < messages.size(); i++) {
-//            if (messages.get(i).getStatus() == 0) {
-//                temp1.add(messages.get(i));
-//            }
-//        }
-//
-//        messages = temp1;
-//
-//        List<Message> temp2 = new ArrayList<>();
-//        for (int i = 0; i < old.size(); i++) {
-//            if (old.get(i).getStatus() == 0) {
-//                temp2.add(old.get(i));
-//            }
-//        }
-//
-//        old = temp2;
+        List<Message> temp1 = new ArrayList<>();
+        for (int i = 0; i < messages.size(); i++) {
+            if (messages.get(i).getStatus() == 0) {
+                temp1.add(messages.get(i));
+            }
+        }
+
+        messages = temp1;
+
+        List<Message> temp2 = new ArrayList<>();
+        for (int i = 0; i < old.size(); i++) {
+            if (old.get(i).getStatus() == 0) {
+                temp2.add(old.get(i));
+            }
+        }
+
+        old = temp2;
 
 
         // 差异计算

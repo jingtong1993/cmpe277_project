@@ -82,27 +82,6 @@
         android:outlineProvider="bounds"
         tools:targetApi="lollipop">
 
-        <ImageView
-            android:id="@+id/btn_face"
-            android:layout_width="@dimen/len_44"
-            android:layout_height="@dimen/len_44"
-            android:contentDescription="@string/app_name"
-            android:enabled="true"
-            android:foreground="@drawable/ic_touch_fg"
-            android:padding="@dimen/len_8"
-            android:src="@drawable/ic_emoji"
-            android:tint="@color/textPrimary" />
-
-        <ImageView
-            android:id="@+id/btn_record"
-            android:layout_width="@dimen/len_44"
-            android:layout_height="@dimen/len_44"
-            android:contentDescription="@string/app_name"
-            android:enabled="true"
-            android:foreground="@drawable/ic_touch_fg"
-            android:padding="@dimen/len_8"
-            android:src="@drawable/ic_record"
-            android:tint="@color/textPrimary" />
 
         <EditText
             android:id="@+id/edit_content"
