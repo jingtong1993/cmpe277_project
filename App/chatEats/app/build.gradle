@@ -12,9 +12,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-                GETUI_APP_ID    : "Y3PyXobMJLAzhXhXjr8Vo7",
-                GETUI_APP_KEY   : "xUnVG3hx8G6ZPEdLFV1An3",
-                GETUI_APP_SECRET: "l931C33qoz5HjvN7dZ0yJ5",
+                GETUI_APP_ID    : "",
+                GETUI_APP_KEY   : "",
+                GETUI_APP_SECRET: "",
                 PACKAGE_NAME    : applicationId
         ]
 
